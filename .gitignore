@@ -1,2 +1,6 @@
 *.swp
 *.swo
+CMakeFiles
+cmake_install.cmake
+CMakeCache.txt
+gtest/Makefile
