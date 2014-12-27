@@ -17,35 +17,30 @@ class Window
 {
 private:
 	std::string name_;
+	Size size_;
+	Position position_;
 	WINDOW* window_;
 	std::vector<WindowPtr> children_;
 
 public:
-	Window(Size, Position = Position());
+	Window(std::string, Size = Size(), Position = Position());
 	~Window();
 	
-	std::string name()
-	{
-		return name_;
-	}
-	WINDOW* genericWindow()
-	{
-		return window_;
-	}
-	const std::vector<WindowPtr>& children()
-	{
-		return children_;
-	}
+	inline std::string name();
+	inline WINDOW* genericWindow();
+	const std::vector<WindowPtr>& children();
 
-	void addWindow(WindowPtr);
+	void addWindow(WindowPtr window);
 	void render(WindowPtr);
 
 	bool operator==(const Window& window)
 	{
-		return name_ == window.name();
+		return window.name() == name_;
 	}
 };
 
 }
+
+#include "impl/window.hpp"
 
 #endif
