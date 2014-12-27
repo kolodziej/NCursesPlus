@@ -6,3 +6,5 @@ CMakeCache.txt
 gtest/Makefile
 *.a
 *.out
+Makefile
+include/config/version.hpp

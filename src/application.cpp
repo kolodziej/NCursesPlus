@@ -1,4 +1,4 @@
-#include "window.hpp"
+#include "application.hpp"
 
 namespace ncursesplus {
 

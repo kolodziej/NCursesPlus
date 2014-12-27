@@ -13,7 +13,7 @@ private:
 
 public:
 	Application(int, char**);
-	virtual void main() = 0;
+	virtual int main() = 0;
 };
 
 }
