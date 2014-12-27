@@ -8,3 +8,4 @@ gtest/Makefile
 *.out
 Makefile
 include/config/version.hpp
+*.so
