@@ -14,6 +14,9 @@ private:
 public:
 	Application(int, char**);
 	virtual int main() = 0;
+
+protected:
+	const std::vector<std::string>& getArgv_();
 };
 
 }
